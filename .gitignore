@@ -1,0 +1,7 @@
+data/raw/
+network_analyzer
+test
+
+
+# Fichier temporaire de resultats
+results/alerts_tmp.csv

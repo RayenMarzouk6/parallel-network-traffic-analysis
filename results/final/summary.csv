@@ -1,0 +1,11 @@
+metric,value
+records_read,3119345
+records_valid,2830743
+records_invalid,0
+records_blank,288602
+flows,2830743
+packets,55921130
+bytes,47307221215
+unique_src_ips,17005
+unique_dst_ips,19112
+unique_dst_ports,53804

@@ -1,0 +1,145 @@
+Lignes lues: 3119345 | valides: 2830743 | invalides: 0 | vides: 288602
+
+===== STATISTIQUES GENERALES =====
+Flux analyses      : 2830743
+Paquets (total)    : 55921130
+Octets (total)     : 47307221215
+IP sources uniques : 17005
+IP dest. uniques   : 19112
+Ports dest. uniques: 53804
+
+===== PROTOCOLES =====
+  ICMP              0 flux ( 0.00 %)                0 octets
+  TCP         1829554 flux (64.63 %)      46977353055 octets
+  UDP          999493 flux (35.31 %)        329868160 octets
+  Autres         1696 flux ( 0.06 %)
+
+===== LABELS (verite terrain) =====
+  BENIGN                          2273097
+  DDoS                             128027
+  PortScan                         158930
+  Bot                                1966
+  Infiltration                         36
+  Web Attack - Brute Force           1507
+  Web Attack - XSS                    652
+  Web Attack - Sql Injection           21
+  FTP-Patator                        7938
+  SSH-Patator                        5897
+  DoS slowloris                      5796
+  DoS Slowhttptest                   5499
+  DoS Hulk                         231073
+  DoS GoldenEye                     10293
+  Heartbleed                           11
+
+Top IP sources (par flux)
+   1. 172.16.0.1             559247 flux       2998740132 octets
+   2. 192.168.10.3           298990 flux         89033260 octets
+   3. 192.168.10.8           215280 flux       1298596205 octets
+   4. 192.168.10.5           170110 flux       1584040708 octets
+   5. 192.168.10.9           152536 flux       1462484391 octets
+   6. 192.168.10.12          146252 flux       1114978767 octets
+   7. 192.168.10.15          146036 flux      21722896298 octets
+   8. 192.168.10.14          140992 flux      10379912338 octets
+   9. 192.168.10.17          123187 flux       1180115358 octets
+  10. 192.168.10.16          122054 flux       1184844590 octets
+
+Top IP sources (par octets)
+   1. 192.168.10.15          146036 flux      21722896298 octets
+   2. 192.168.10.14          140992 flux      10379912338 octets
+   3. 172.16.0.1             559247 flux       2998740132 octets
+   4. 192.168.10.25          117469 flux       1965826269 octets
+   5. 192.168.10.5           170110 flux       1584040708 octets
+   6. 192.168.10.9           152536 flux       1462484391 octets
+   7. 192.168.10.8           215280 flux       1298596205 octets
+   8. 192.168.10.16          122054 flux       1184844590 octets
+   9. 192.168.10.17          123187 flux       1180115358 octets
+  10. 192.168.10.12          146252 flux       1114978767 octets
+
+Top IP destinations (par flux)
+   1. 192.168.10.3           685451 flux        297035704 octets
+   2. 192.168.10.50          583962 flux       3023652284 octets
+   3. 192.168.10.1           294077 flux         59479001 octets
+   4. 192.168.10.25           78575 flux          2102587 octets
+   5. 192.168.10.5            56425 flux          3950006 octets
+   6. 172.16.0.1              48298 flux        272356171 octets
+   7. 192.168.10.15           40057 flux          3168986 octets
+   8. 192.168.10.9            39330 flux          2941502 octets
+   9. 192.168.10.14           39037 flux          5670278 octets
+  10. 192.168.10.12           38155 flux          3007146 octets
+
+Top IP destinations (par octets)
+   1. 13.107.4.50                96 flux      23108359207 octets
+   2. 192.168.10.50          583962 flux       3023652284 octets
+   3. 165.254.0.106              11 flux       1258356903 octets
+   4. 23.15.4.16                450 flux        822640359 octets
+   5. 23.15.4.24                275 flux        644359481 octets
+   6. 8.253.104.126               6 flux        630380693 octets
+   7. 8.253.104.14                4 flux        629262842 octets
+   8. 151.101.44.65              45 flux        609163381 octets
+   9. 151.101.192.65             18 flux        400863944 octets
+  10. 23.15.4.9                 475 flux        347408594 octets
+
+Top ports destination (par flux)
+   1. 53                     957971 flux        267505873 octets
+   2. 80                     618934 flux      33925655371 octets
+   3. 443                    505710 flux      12453534233 octets
+   4. 123                     23880 flux          3506832 octets
+   5. 22                      16941 flux         63302101 octets
+   6. 21                      13522 flux          2875133 octets
+   7. 137                      7917 flux          5968886 octets
+   8. 389                      6406 flux         32780242 octets
+   9. 88                       5580 flux         14438112 octets
+  10. 465                      3817 flux          9896384 octets
+
+===== SERIE TEMPORELLE (fenetre = 60 s) =====
+Fenetres totales   : 6248 (dont 2454 non vides)
+Fenetre la + chargee: 2017-07-07 14:55 -> 46216 flux, 9385742 octets
+
+===== ALERTES =====
+Scans de ports possibles : 834
+Pics de flux             : 88
+Pics d'octets            : 194
+
+Top 10 alertes (score = valeur / seuil)
+  port_scan            2017-07-07 16:10  192.168.10.50   -> 172.16.0.1      valeur=1877 seuil=20.0 score=93.8
+  port_scan            2017-07-07 16:06  192.168.10.50   -> 172.16.0.1      valeur=1792 seuil=20.0 score=89.6
+  port_scan            2017-07-07 16:11  192.168.10.50   -> 172.16.0.1      valeur=1768 seuil=20.0 score=88.4
+  port_scan            2017-07-07 16:15  192.168.10.50   -> 172.16.0.1      valeur=1744 seuil=20.0 score=87.2
+  port_scan            2017-07-07 16:07  192.168.10.50   -> 172.16.0.1      valeur=1708 seuil=20.0 score=85.4
+  port_scan            2017-07-07 16:13  192.168.10.50   -> 172.16.0.1      valeur=1672 seuil=20.0 score=83.6
+  port_scan            2017-07-07 16:14  192.168.10.50   -> 172.16.0.1      valeur=1645 seuil=20.0 score=82.2
+  port_scan            2017-07-07 16:12  192.168.10.50   -> 172.16.0.1      valeur=1626 seuil=20.0 score=81.3
+  port_scan            2017-07-07 16:08  192.168.10.50   -> 172.16.0.1      valeur=1560 seuil=20.0 score=78.0
+  port_scan            2017-07-07 16:09  192.168.10.50   -> 172.16.0.1      valeur=1560 seuil=20.0 score=78.0
+
+===== EVALUATION DES SCANS DE PORTS (niveau flux) =====
+Regle : un flux est detecte s'il appartient a un groupe (src,dst,fenetre) en alerte.
+Verite terrain : label PortScan (158930 flux)
+TP = 158549   FP = 140835   FN = 381
+Precision = 0.5296   Rappel = 0.9976   F1 = 0.6919
+
+Alertes exportees dans results/alerts_full.csv
+
+===== PERFORMANCE =====
+Parametres         : fenetre=60 s, seuil scan=20 ports, facteur pic=3.0
+Machine            : 12 processeurs logiques
+Chargement         : 3.468 s (hors mesure)
+Sequentiel
+  Analyse          : 0.0588 s  (48147480 flux/s)
+  Detection        : 0.5898 s  (4799516 flux/s)
+  Total            : 0.6486 s  (4364452 flux/s)
+  Checksum stats   : 35f881883c3ddc74
+  Checksum alertes : eee2f657d96e5bec (1116 alertes)
+OpenMP (12 threads, ordonnancement static)
+  Analyse          : 0.0438 s  (64628738 flux/s)
+  Detection        : 0.1514 s  (18691733 flux/s)
+  Total            : 0.1952 s  (14498516 flux/s)
+  Checksum stats   : 35f881883c3ddc74
+  Checksum alertes : eee2f657d96e5bec (1116 alertes)
+
+===== COMPARAISON SEQUENTIEL / OPENMP (12 threads) =====
+Speedup analyse    : 1.34   (efficacite 11.2 %)
+Speedup detection  : 3.89   (efficacite 32.5 %)
+Speedup total      : 3.32   (efficacite 27.7 %)
+Equivalence stats  : OUI
+Equivalence alertes: OUI
