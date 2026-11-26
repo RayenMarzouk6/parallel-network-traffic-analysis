@@ -5,7 +5,7 @@ sequential baseline and an **OpenMP** parallel version, plus a reproducible benc
 
 > Academic project (Project 06) for the module *Atelier de programmation sur machines à mémoire distribuée
 > (Grilles de calcul)*, class CCDAD 2, ISET Sousse.
-> Author: Rayen [YOUR LAST NAME].
+> Author: Rayen.
 
 ## Table of contents
 
